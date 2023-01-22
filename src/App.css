@@ -1,38 +1,110 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+body {
+  background-color: black;
+}
+
+.grid_items {
+  padding: 40px !important;
+}
+
+.main_div {
+  border-radius: 20px;
+  padding: 35px;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+}
+
+.text {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 20px !important;
+  color: white;
+  margin-bottom: 10px !important;
+}
+.body {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px !important;
+  color: whitesmoke;
+}
+
+.image_generation:hover .text {
+  color: black !important;
+}
+
+.image_generation:hover .body {
+  color: black !important;
+}
+.image_generation:hover .main_div {
+  background-color: whitesmoke;
+}
+
+.centered {
+  text-align: center;
+  margin: 25px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text_header {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 25px !important;
   color: white;
+  margin-bottom: 10px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.text_ans{
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 567px) {
+  .main_container {
+    margin: 20px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .text_header {
+    font-size: 15px !important;
   }
+  .app_input {
+    padding: 10px 0px !important;
+    margin: 20px 0px !important;
+    width: 100% !important;
+    text-align: center;
+    font-size: 15px !important;
+  }
+  .resimg {
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
+
+.app_input {
+  height: 5vh;
+  margin: 25px;
+  padding: 20px;
+  font-size: 20px;
+  width: 500px;
+  border-radius: 20px;
+}
+.app_button {
+  padding: 20px !important;
+  color: whitesmoke !important;
+  border: 2px solid whitesmoke !important;
+  border-radius: 30px !important;
+  text-transform: capitalize !important;
+}
+
+.resimg {
+  margin-top: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+input:focus {
+  outline: none;
 }
